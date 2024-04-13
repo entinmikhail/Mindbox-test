@@ -1,7 +1,7 @@
-﻿using UsageExample.Core.Abstractions;
-using UsageExample.Core.Shape;
+﻿using Example.Core.Abstractions;
+using Example.Core.Shape;
 
-namespace UsageExample.Core.Factory;
+namespace Example.Core.Factory;
 
 public static class ShapeFactory
 {

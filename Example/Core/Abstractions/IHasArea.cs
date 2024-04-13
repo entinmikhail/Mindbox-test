@@ -1,4 +1,4 @@
-﻿namespace UsageExample.Core.Abstractions;
+﻿namespace Example.Core.Abstractions;
 
 public interface IHasArea
 {

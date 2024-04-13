@@ -1,7 +1,7 @@
-using UsageExample.Core.Abstractions;
-using UsageExample.Core.Factory;
+using Example.Core.Abstractions;
+using Example.Core.Factory;
 
-namespace UsageExample.Core;
+namespace Example.Core;
 
 public class Bootstrap
 {

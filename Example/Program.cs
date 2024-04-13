@@ -1,4 +1,4 @@
-﻿using UsageExample.Core;
+﻿using Example.Core;
 
 var bootstrap = new Bootstrap();
 bootstrap.Run();

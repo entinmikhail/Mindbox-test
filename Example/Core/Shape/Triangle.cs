@@ -1,8 +1,8 @@
-﻿using Geometry.Core.Calculation;
+﻿using Example.Core.Abstractions;
+using Geometry.Core.Calculation;
 using Geometry.Core.Validation;
-using UsageExample.Core.Abstractions;
 
-namespace UsageExample.Core.Shape;
+namespace Example.Core.Shape;
 
 public sealed class Triangle : ITriangle
 {

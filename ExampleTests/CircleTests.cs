@@ -1,6 +1,6 @@
-﻿using UsageExample.Core.Shape;
+﻿using Example.Core.Shape;
 
-namespace TestProject1;
+namespace ExampleTests;
 
 [TestClass]
 public class CircleTests
