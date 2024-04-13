@@ -9,8 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7769692-29c1-4699-b4bd-d59b1c4bae86" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Geometry/Core/Calculation/TriangleMath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Geometry/Core/Calculation/TriangleMath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geometry/Core/Configurations/GeometryConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Geometry/Core/Configurations/GeometryConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Mindbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Mindbox/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +31,21 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/82fad5645ee52ae1ad827c483af9a87247415ccd912fcfdad88448944d58dfb/Single.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9a6b1457cbcf17db31a383ba49ef9bcc786cf3ef77146d997eee499b27a46d/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/cf62c4f4a92efacab5e217195e1a17d998749abda624b59e3122d17c26a1b7/ArgumentException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/msha3/RiderProjects/Mindbox/Example/Core/Abstractions/ICircle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Example/Core/Bootstrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/msha3/RiderProjects/Mindbox/Example/Core/Shape/Circle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Example/Core/Shape/Circle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Example/Core/Shape/Triangle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Example/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExampleTests/CircleTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExampleTests/TriangleTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ExampleTests/Usings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Geometry/Core/Calculation/CircleMath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Geometry/Core/Calculation/TriangleMath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Geometry/Core/Configurations/GeometryConstants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Geometry/Core/Validation/CircleValidation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Geometry/Core/Validation/TriangleValidation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Mindbox/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UsageExampleTests/CircleTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UsageExampleTests/TriangleTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/UsageExampleTests/Usings.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -124,7 +129,7 @@
       <updated>1712244112442</updated>
       <workItem from="1712244113523" duration="6195000" />
       <workItem from="1713009887211" duration="15177000" />
-      <workItem from="1713035464464" duration="1301000" />
+      <workItem from="1713035464464" duration="1995000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -134,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713036163093</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="names clean up">
+      <option name="closed" value="true" />
+      <created>1713036999333</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713036999333</updated>
+    </task>
+    <task id="LOCAL-00003" summary="namespace clean up">
+      <option name="closed" value="true" />
+      <created>1713037260380</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713037260380</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +166,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="names clean up" />
+    <MESSAGE value="namespace clean up" />
   </component>
 </project>
