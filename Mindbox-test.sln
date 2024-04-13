@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsageExampleTests", "UsageExampleTests\UsageExampleTests.csproj", "{8CC3F418-125F-4B9D-89C2-70E4F680C8F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleTests", "ExampleTests\ExampleTests.csproj", "{8CC3F418-125F-4B9D-89C2-70E4F680C8F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsageExample", "UsageExample\UsageExample.csproj", "{FB92AAF1-1C9F-4012-9F50-1E4E6B4B8674}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{FB92AAF1-1C9F-4012-9F50-1E4E6B4B8674}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geometry.csproj", "{1813415A-DA54-4BDC-847B-DFBF05EED5F5}"
 EndProject

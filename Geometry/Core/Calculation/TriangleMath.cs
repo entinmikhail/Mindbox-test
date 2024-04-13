@@ -17,9 +17,9 @@ public static class TriangleMath
         double bPow2 = b_Length * b_Length;
         double cPow2 = c_Length * c_Length;
 
-        return Math.Abs(aPow2 + bPow2 - cPow2) < GeometryConstants.TOLERANCE ||
-               Math.Abs(aPow2 + cPow2 - bPow2) < GeometryConstants.TOLERANCE ||
-               Math.Abs(bPow2 + cPow2 - aPow2) < GeometryConstants.TOLERANCE;
+        return Math.Abs(aPow2 + bPow2 - cPow2) < GeometryConstants.Tolerance ||
+               Math.Abs(aPow2 + cPow2 - bPow2) < GeometryConstants.Tolerance ||
+               Math.Abs(bPow2 + cPow2 - aPow2) < GeometryConstants.Tolerance;
     }
 
     /// <summary>

@@ -7,7 +7,7 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
-        <RootNamespace>UsageExampleTests</RootNamespace>
+        <RootNamespace>ExampleTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\UsageExample\UsageExample.csproj" />
+      <ProjectReference Include="..\Example\Example.csproj" />
     </ItemGroup>
 
 </Project>
