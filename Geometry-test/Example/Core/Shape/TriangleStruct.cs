@@ -1,5 +1,6 @@
 ﻿using Geometry.Abstraction;
 using Geometry.Core.Type;
+using Geometry.Core.Validation;
 
 namespace Example.Core.Shape;
 
@@ -11,6 +12,8 @@ public readonly struct TriangleStruct : ITriangle
     
     public TriangleStruct(float aLength, float bLength, float cLength)
     {
+        TriangleValidation.ThrowExceptionIfTriangleIsNotValid(aLength, bLength, cLength);
+        
         A_Length = aLength;
         B_Length = bLength;
         C_Length = cLength;
