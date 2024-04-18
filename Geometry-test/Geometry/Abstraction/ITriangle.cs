@@ -1,4 +1,4 @@
-﻿namespace Example.Core.Abstractions;
+﻿namespace Geometry.Abstraction;
 
 public interface ITriangle : IShape
 {

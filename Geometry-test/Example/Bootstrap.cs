@@ -1,10 +1,13 @@
-using Example.Core.Abstractions;
 using Example.Core.Factory;
+using Example.Utility;
+using Geometry.Abstraction;
 
-namespace Example.Core;
+namespace Example;
 
 public class Bootstrap
 {
+    private readonly ILogger _logger = new Logger();
+
     public void Run()
     {
         foreach (var shape in GetShapes())
@@ -23,6 +26,9 @@ public class Bootstrap
 
         if (ShapeFactory.TryCreateCircleByRadius(10f, out var firstCircle))
             yield return firstCircle;
+        
+        if (ShapeFactory.TryCreateMyCircleByRadius(10f, _logger, out var circleWithLogger))
+            yield return circleWithLogger;
 
         if (ShapeFactory.TryCreateCircleByRadius(-1f, out var secondCircle))
             yield return secondCircle;

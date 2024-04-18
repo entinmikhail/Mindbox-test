@@ -1,14 +1,17 @@
 ﻿using Example.Core.Shape;
+using Example.Utility;
 
 namespace ExampleTests;
 
 [TestClass]
 public class CircleTests
 {
+    private readonly ILogger _logger = new Logger();
+
     [TestMethod]
     public void GetArea()
     {
-        if (!Circle.TryCreateByRadius(10, out var circleSample))
+        if (!MyCircle.TryCreateByRadius(10, _logger, out var circleSample))
         {
             Assert.Fail();
             return;
@@ -22,7 +25,7 @@ public class CircleTests
     [TestMethod]
     public void GetAreaFloatMaxValues()
     {
-        if (!Circle.TryCreateByRadius(float.MaxValue, out var circleSample))
+        if (!MyCircle.TryCreateByRadius(float.MaxValue, _logger, out var circleSample))
         {
             Assert.Fail();
             return;
@@ -36,7 +39,7 @@ public class CircleTests
     [TestMethod]
     public void GetAreaFloatEpsilon()
     {
-        if (!Circle.TryCreateByRadius(float.Epsilon, out var circleSample))
+        if (!MyCircle.TryCreateByRadius(float.Epsilon, _logger, out var circleSample))
         {
             Assert.Fail();
             return;
@@ -50,7 +53,7 @@ public class CircleTests
     [TestMethod]
     public void TryCreateByFloatMinValues()
     {
-        if (Circle.TryCreateByRadius(float.MinValue, out _))
+        if (MyCircle.TryCreateByRadius(float.MinValue, _logger, out _))
         {
             Assert.Fail();
         }
@@ -59,7 +62,7 @@ public class CircleTests
     [TestMethod]
     public void TryCreateByFloatMax()
     {
-        if (!Circle.TryCreateByRadius(float.MaxValue, out _))
+        if (!MyCircle.TryCreateByRadius(float.MaxValue, _logger, out _))
         {
             Assert.Fail();
         }

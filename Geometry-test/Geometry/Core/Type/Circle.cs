@@ -1,14 +1,13 @@
-﻿using Example.Core.Abstractions;
-using Geometry.Core.Calculation;
+﻿using Geometry.Abstraction;
 using Geometry.Core.Validation;
 
-namespace Example.Core.Shape;
+namespace Geometry.Core.Type;
 
-public sealed class Circle : ICircle
+public class Circle : ICircle
 {
     public float Radius { get; }
 
-    private Circle(float radius)
+    protected Circle(float radius)
     {
         Radius = radius;
     }
@@ -24,7 +23,7 @@ public sealed class Circle : ICircle
         return true;
     }
 
-    public double GetArea() => CircleMath.GetAreaByRadius(Radius);
+    public virtual double GetArea() => GetAreaByRadius(Radius);
 
     public override int GetHashCode() => Radius.GetHashCode();
 
@@ -37,4 +36,16 @@ public sealed class Circle : ICircle
     }
 
     private bool Equals(ICircle other) => Radius.Equals(other.Radius);
+    
+    /// <summary>
+    /// Возвращает площадь круга по радиусу. Принимает значения в диапазоне [float.Epsilon; float.MaxValue]
+    /// </summary>
+    /// <returns> Площадь </returns>
+    public static double GetAreaByRadius(float radius)
+    {
+        if (!CircleValidation.IsCircleValid(radius))
+            return -1;
+        
+        return Math.PI * radius * radius;
+    }
 }

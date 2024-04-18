@@ -10,7 +10,7 @@ public class TriangleTests
     {
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
         {
-            new Triangle(float.MinValue, float.MinValue, float.MinValue);
+            new MyTriangle(float.MinValue, float.MinValue, float.MinValue);
         });
     }
     
@@ -19,7 +19,7 @@ public class TriangleTests
     {
         Assert.ThrowsException<ArgumentException>(() =>
         {
-            new Triangle(10, 10, float.MaxValue);
+            new MyTriangle(10, 10, float.MaxValue);
         });
     }
     
@@ -28,14 +28,14 @@ public class TriangleTests
     {
         Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
         {
-            new Triangle(0, 0, 0);
+            new MyTriangle(0, 0, 0);
         });    
     }
     
     [TestMethod]
     public void GetArea()
     {
-        var triangle = new Triangle(10, 10, 10);
+        var triangle = new MyTriangle(10, 10, 10);
         
         var expected = 43.30127018922193;
 
@@ -45,7 +45,7 @@ public class TriangleTests
     [TestMethod]
     public void IsRightAngledFalse()
     {
-        var triangle = new Triangle(10, 10, 10);
+        var triangle = new MyTriangle(10, 10, 10);
         
         var expected = false;
 
@@ -55,7 +55,7 @@ public class TriangleTests
     [TestMethod]
     public void IsRightAngledTrue()
     {
-        var triangle = new Triangle(3, 4, 5);
+        var triangle = new MyTriangle(3, 4, 5);
         
         var expected = true;
 
@@ -65,7 +65,7 @@ public class TriangleTests
     [TestMethod]
     public void GetAreaFloatMaxValues()
     {
-        var triangle = new Triangle(float.MaxValue, float.MaxValue, float.MaxValue);
+        var triangle = new MyTriangle(float.MaxValue, float.MaxValue, float.MaxValue);
         
         var expected = 5.0139439441307764E+76;
         
@@ -75,7 +75,7 @@ public class TriangleTests
     [TestMethod]
     public void GetAreaFloatEpsilon()
     {
-        var triangle = new Triangle(float.Epsilon, float.Epsilon, float.Epsilon);
+        var triangle = new MyTriangle(float.Epsilon, float.Epsilon, float.Epsilon);
         
         var expected = 8.502799301000025E-91;
         

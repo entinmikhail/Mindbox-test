@@ -1,4 +1,4 @@
-﻿namespace Geometry.Core.Configurations;
+﻿namespace Geometry.Configuration;
 
 public static class GeometryConstants
 {
